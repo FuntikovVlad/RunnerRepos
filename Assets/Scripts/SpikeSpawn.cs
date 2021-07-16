@@ -5,6 +5,7 @@ using UnityEngine;
 public class SpikeSpawn : MonoBehaviour
 {
     public GameObject[] spikes;
+    
     private double TimeBtwSpawn;
     public double startTimeBtwSpawn;
     void Start()
@@ -19,6 +20,8 @@ public class SpikeSpawn : MonoBehaviour
         {
             int rand = Random.Range(0, spikes.Length);
             Instantiate(spikes[rand], transform.position, Quaternion.identity);
+
+
             if (startTimeBtwSpawn >= 0.5)
             {
                 startTimeBtwSpawn -= 0.05;

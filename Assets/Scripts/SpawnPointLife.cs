@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnPoinr : MonoBehaviour
+public class SpawnPointLife : MonoBehaviour
 {
-    public GameObject spike;
-   
+    public GameObject life;
+
     void Start()
     {
-        Instantiate(spike, transform.position, Quaternion.identity);
+        Instantiate(life, transform.position, Quaternion.identity);
 
 
     }
@@ -16,9 +16,9 @@ public class SpawnPoinr : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
-   
+
 
 
 }
